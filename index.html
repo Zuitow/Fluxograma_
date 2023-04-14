@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Documento</title>
+
+</head>
+<script>
+function login_faca() {
+    var usuario;
+    var senha;
+    var repete;
+    
+    repete = true;
+    do {
+        window.alert("Insira os Seus Dados");
+        usuario = window.prompt('Enter a value for usuario');
+        senha = window.prompt('Enter a value for senha');
+        if (usuario == "Sol") {
+            if (senha == "Lua") {
+                window.alert("Login Efetuado com Sucesso");
+                repete = false;
+            } else {
+                window.alert("Usuário ou Senha Incorreta");
+            }
+        } else {
+            window.alert("Usuário ou Senha Incorreta");
+        }
+    } while (repete);
+}
+
+function login_enquanto() {
+    var usuario;
+    var senha;
+    var repete;
+    
+    repete = true;
+    while (repete) {
+        window.alert("Insira os Seus Dados");
+        usuario = window.prompt('Enter a value for usuario');
+        senha = window.prompt('Enter a value for senha');
+        if (usuario == "Sol") {
+            if (senha == "Lua") {
+                window.alert("Login Efetuado com Sucesso");
+                repete = false;
+            } else {
+                window.alert("Usuário ou Senha Incorreta");
+            }
+        } else {
+            window.alert("Usuário ou Senha Incorreta");
+        }
+    }
+}
+
+
+</script>
+<body>
+    <button onclick="login_enquanto()">Login Enquanto</button>
+    <button onclick="login_faca()">Login Faça</button>
+</body>
+
+</html>
